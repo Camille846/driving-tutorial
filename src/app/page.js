@@ -15,13 +15,13 @@ export default function Home() {
 
   useEffect(() => {
     console.log('Iniciando carregamento do player do YouTube...');
-    // Carrega a API do YouTube
+    // API do YouTube
     const tag = document.createElement('script');
     tag.src = 'https://www.youtube.com/iframe_api';
     const firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-    // Função global que o YouTube API chama quando está pronta
+    // Função global que API chama quando está pronta
     window.onYouTubeIframeAPIReady = () => {
       console.log('API do YouTube carregada, inicializando player...');
       const newPlayer = new window.YT.Player('youtube-player', {
@@ -37,7 +37,6 @@ export default function Home() {
             console.log('Player está pronto!');
             const player = event.target;
             setPlayer(player);
-            // Inicia a verificação do tempo quando o player estiver pronto
             startTimeCheck(player);
           }
         }
@@ -61,10 +60,7 @@ export default function Home() {
           ' ', // Espaço (play/pause)
           'ArrowLeft', // Seta esquerda (retroceder)
           'ArrowRight', // Seta direita (avançar)
-          'ArrowUp', // Seta para cima (volume)
-          'ArrowDown', // Seta para baixo (volume)
           'k', // Tecla K (play/pause)
-          'm', // Tecla M (mudo)
           'f', // Tecla F (tela cheia)
           '0', // Tecla 0 (início do vídeo)
           '1', // Tecla 1 (10% do vídeo)
