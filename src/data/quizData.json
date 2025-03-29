@@ -1,0 +1,27 @@
+{
+  "videoUrl": "hBVLXVA2ymk",
+  "quizzes": [
+    {
+      "timestamp": 10,
+      "question": "O que deve ser feito nesse momento?",
+      "options": [
+        "Acionar a seta para direita",
+        "Acionar a seta para esquerda",
+        "Acionar a seta para cima",
+        "Acionar a seta para baixo"
+      ],
+      "correctAnswer": 0
+    }, 
+    {
+      "timestamp": 30,
+      "question": "Qual marcha deve ser acionada?",
+      "options": [
+        "Marcha 1",
+        "Marcha 2",
+        "Marcha 3",
+        "Marcha 4"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+} 
